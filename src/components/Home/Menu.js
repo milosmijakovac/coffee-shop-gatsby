@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 class Menu extends Component {
   constructor(props){
     super(props)
-    console.log(props);
+    console.log(props.items);
   }
   render() {
     return (

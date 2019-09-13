@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import {FaGulp} from 'react-icons/fa';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,7 +22,7 @@ export const query = graphql`
   img: file(relativePath:{eq: "default-background.jpeg"}) {
     childImageSharp{
       fluid{
-        ...GatsbyImageSharpFluid_tracedSVG
+        ...GatsbyImageSharpFluid
       }
     }
   }
@@ -39,7 +38,7 @@ export const query = graphql`
         category
         image{
           fixed(width:50, height:50) {
-            ...GatsbyContentfulFixed_tracedSVG
+            ...GatsbyContentfulFixed
           }
         }
       }
